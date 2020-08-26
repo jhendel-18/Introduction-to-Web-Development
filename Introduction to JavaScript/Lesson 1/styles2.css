@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+@import url('https://fonts.googleapis.com/css?family=Metal+Mania');
+
+@font-face { 
+    font-family: "Booter - Zero Zero"; /*gives font a name*/ 
+    src: url("Fonts/Booter - Zero Zero.woff") /* where the font is being imported from */ format("woff"),  /* format */
+         url("Fonts/Booter - Zero Zero.woff") format("woff2"); /* the browser will take first source, if it doesn't work the borswer will import 2 source */
+    font-weight: normal; 
+    font-style: normal; /* not italics or bold */
+}
+
+* { 
+    box-sizing: border-box; /*size of elements is determined by padding and marging and also content */ 
+    font-family: Raleway; 
+    color: #777; 
+
+}
+
+
+html, body { 
+    margin: 0; 
+    padding: 0;
+
+}
+
+.nav ul { 
+    margin: 0; 
+}
+
+.nav li { 
+     /* combines class nav and those with a list */
+    display: inline;   /* this is used to bring navigation onto one line. (inline elements can't have padding on top or bottom */
+} 
+
+.nav a { 
+    display: inline-block;  /* add paddding and height to elements that you can't do with inline elements*/
+    padding: .5em;  
+    color: white; 
+    text-decoration: none;  /* removes underline from line */
+
+}
+
+.main-nav { 
+    text-align: center; 
+    font-size: 1.1em; 
+    font-weight: lighter; /* helps better into background */ 
+    border-bottom: 1px solid rgba ( 255, 255, 255, .3)  /* adds a solid line border at the end */ 
+}
+
+.main-nav li { 
+    padding: 0 5%; /* spaces out elements from each other*/ 
+
+}
+
+
+.nav a:hover { 
+    background-color: rgba( 255,255, 255, .3)  /* add a color to highlight box when your cursor hovers over words */
+}
+
+
+.main-header { 
+    background-color: rba(0,0,0, .6);
+    background-image: url("Images/HeaderBackground.jpg");
+    background-blend-mode: multiply; /* combines the background-color and background image */ 
+    background-size: cover;
+    padding-bottom: 30px;
+
+}
+
+.band-name { 
+    text-align: center; 
+    margin: 0; 
+    font-size: 4em; 
+    font-family: "Booter - Zero Zero"; 
+    font-weight: normal;  
+    color: white; 
+} 
+
+.band-name-large { 
+    font-size: 8em; 
+}
+
+.content-section { 
+    margin: 1em; 
+
+}
+
+.container { 
+    max-width: 900px; /* ensures that as the screen size increases that the font can only increase to a max of 900  */
+    margin: 0 auto; /* the auto ensure that the margins will always be as large as they need to be so that text in the center even if screen changes*/
+    padding: 0 1.5em; 
+}
+
+.section-header { 
+    font-family: "Metal Mania";
+    font-weight: normal; 
+    color: #333;  
+    text-align: center; 
+    font-size: 2.5em; 
+}
